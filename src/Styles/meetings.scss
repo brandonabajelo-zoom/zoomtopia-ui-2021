@@ -1,0 +1,179 @@
+$zoomBlue: #2D8CFF;
+$white: #fff;
+$grey: grey;
+$background: #F8F9FA !important;
+$red: red;
+$black: #000;
+$svgColor: rgba(0, 0, 0, 0.45);
+
+.component-container {
+  margin: 20px 0px;
+  > div > .component-header {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    > div > .ant-switch {
+      font-size: 20px;
+    }
+  }
+  > .component-header {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    > small {
+      color: $grey;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.add-event {
+  margin-right: 10px;
+}
+
+.ant-tabs.ant-tabs-top.ant-tabs-large.ant-tabs-card.user-tabs {
+  margin: 25px 0px;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $zoomBlue;
+  font-weight: 500;
+}
+
+.form-content {
+  width: 50%;
+}
+
+.card-field {
+  > .ant-tag {
+    margin-left: 10px;
+  }
+}
+
+.question-icon {
+  margin-left: 10px;
+}
+
+.anticon.table-icon {
+  > svg {
+    color: $svgColor;
+    font-size: 18px;
+    &:hover {
+      color: $zoomBlue;
+    }
+  }
+}
+
+.anticon.table-info {
+  margin-left: 5px;
+  > svg {
+    color: $svgColor;
+    font-size: 15px;
+    &:hover {
+      color: $zoomBlue;
+    }
+  }
+}
+
+.join-url {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  > div {
+    color: $black;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+    > span {
+      color: $grey;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.ant-list-item {
+  .ant-list-item-meta {
+    .ant-list-item-meta-content {
+      .ant-list-item-meta-title, .ant-list-item-meta-avatar {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.ant-list.ant-list-split.registrant-list {
+  margin-top: 20px;
+}
+
+.ant-btn.ant-btn-text.ant-btn-sm.approve-btn {
+  color: $zoomBlue;
+}
+
+.ant-btn.ant-btn-text.ant-btn-sm.deny-btn {
+  color: $red;
+}
+
+.ant-badge.ant-badge-status.ant-badge-not-a-wrapper.live-badge {
+  .ant-badge-status-dot.ant-badge-status-processing {
+    margin: 0px 10px 8px 0px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+#webinar-registration-url {
+  margin: 0px 10px;
+}
+
+#webinar-join-url {
+  margin: 0px 10px;
+}
+
+.copy-title {
+  color: $black;
+  font-size: 16px;
+}
+
+.pagination-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.qos-flex {
+  display: flex;
+  align-items: center;
+  > .anticon {
+    margin-left: 10px;
+    &:hover {
+      color: $zoomBlue;
+    }
+    &.selected {
+      color: $zoomBlue;
+    }
+  }
+}
+
+.qos-loading {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.react-json-view {
+  background-color: #F8F9FA !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif !important;
+}
+
+.string-value {
+  color: $zoomBlue !important;
+}

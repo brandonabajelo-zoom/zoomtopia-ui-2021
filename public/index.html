@@ -15,6 +15,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta http-equiv="origin-trial" content="Am/3GuJrzRLppT4iAA9irUtv9jl9jCIWoVtHTNFEYM2Zw9E1kIbeQhJ80eH6mVxOiH/tOEke6dMaot/3xGxrYQEAAABgeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2Mzk1MjYzOTl9">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +25,22 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Zoomtopia Demo</title>
+
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.9.6/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.9.6/css/react-select.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script src="https://source.zoom.us/1.9.6/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/1.9.6/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/1.9.6/lib/vendor/redux.min.js"></script>
+    <script src="https://source.zoom.us/1.9.6/lib/vendor/redux-thunk.min.js"></script>
+    <script src="https://source.zoom.us/1.9.6/lib/vendor/lodash.min.js"></script>
+    <script src="https://source.zoom.us/zoom-meeting-1.9.6.min.js"></script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

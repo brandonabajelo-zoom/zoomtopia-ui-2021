@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Layout } from 'antd';
+import { Switch, Route } from 'react-router-dom';
+
+import zoomLogo from './Images/zoomBlue.png';
+import { Websdk, Participants, Meetings } from './components';
+
+const { Header, Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header>
+        <img src={zoomLogo} alt="" className="zoom-img" />
+      </Header>
+      <Content>
+        <Switch>
+          <Route path="/participants/:meetingId">
+            <Participants />
+          </Route>
+          <Route path="/websdk">
+            <Websdk />
+          </Route>
+          <Route path="/">
+            <Meetings />
+          </Route>
+        </Switch>
+      </Content>
+    </Layout>
   );
 }
 
